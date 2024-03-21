@@ -1,26 +1,48 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import * as path from 'path';
+import * as fs from 'fs';
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+	let disposable = vscode.commands.registerCommand('extension.openWebview', (htmlFileName: string) => {
+		// let disposable = vscode.commands.registerCommand('extension.openWebview', (htmlFileName: string, cssFileName: string) => {
+		const htmlFilePath = vscode.Uri.file(
+			path.join(context.extensionPath, 'docs', `${htmlFileName}.html`)
+		);
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "webview-opener" is now active!');
+		const panel = vscode.window.createWebviewPanel(
+			'webviewSample',
+			'Documentation',
+			vscode.ViewColumn.Two,
+			{
+				enableScripts: true
+			}
+		);
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('webview-opener.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from webview-opener!');
+		// Set the HTML content for the webview to the specified HTML file
+		panel.webview.html = getWebviewContent(htmlFilePath);
+		// panel.webview.html = getWebviewContent(htmlFilePath, cssFileName);
 	});
 
 	context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
-export function deactivate() {}
+function getWebviewContent(htmlFilePath: vscode.Uri): string {
+	// Read the contents of the HTML file
+	const htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'utf-8');
+	return htmlContent;
+}
+
+// function getWebviewContent(htmlFilePath: vscode.Uri, cssFolderPath: string, cssFileName: string): string {
+// 	// Read the contents of the HTML file
+// 	let htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'utf-8');
+
+// 	// Replace the CSS link with the webview URI
+// 	const cssUri = vscode.Uri.file(path.join(context.extensionPath, 'downloads', cssFolderPath, cssFileName));
+// 	const cssWebviewUri = panel.webview.asWebviewUri(cssUri);
+// 	htmlContent = htmlContent.replace('<link rel="stylesheet" href="styles.css">', `<link rel="stylesheet" href="${cssWebviewUri}">`);
+
+// 	return htmlContent;
+// }
+
+
+export function deactivate() { }

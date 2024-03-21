@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trixnz/vscode-lua"
+    "url": "https://github.com/EduYukio/webview-opener"
   },
   "engines": {
     "vscode": "^1.73.0"
@@ -14,15 +14,16 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:helloworld.helloWorld"
+    "onCommand:extension.openWebview"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "webview-opener.helloWorld",
-        "title": "Hello World"
-      }
+        {
+            "command": "extension.openWebview",
+            "title": "Open Webview",
+            "category": "Other"
+        }
     ]
   },
   "scripts": {
