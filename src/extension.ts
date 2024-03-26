@@ -3,46 +3,44 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
-	let disposable = vscode.commands.registerCommand('extension.openWebview', (htmlFileName: string) => {
-		// let disposable = vscode.commands.registerCommand('extension.openWebview', (htmlFileName: string, cssFileName: string) => {
-		const htmlFilePath = vscode.Uri.file(
-			path.join(context.extensionPath, 'docs', `${htmlFileName}.html`)
-		);
+	let openWebviewCommand = vscode.commands.registerCommand('extension.openWebview', (htmlFileName: string) => {
 
 		const panel = vscode.window.createWebviewPanel(
 			'webviewSample',
-			'Documentation',
+			`${htmlFileName} Documentation`,
 			vscode.ViewColumn.Two,
-			{
-				enableScripts: true
-			}
+			{ enableScripts: true }
 		);
 
-		// Set the HTML content for the webview to the specified HTML file
-		panel.webview.html = getWebviewContent(htmlFilePath);
-		// panel.webview.html = getWebviewContent(htmlFilePath, cssFileName);
+		const htmlFilePath = vscode.Uri.file(path.join(context.extensionPath, 'docs', `${htmlFileName}.html`));
+
+		var cssFileName = "ldoc";
+		panel.webview.html = getWebviewContent(htmlFilePath, cssFileName);
+
+		function getWebviewContent(htmlFilePath: vscode.Uri, cssFileName: string): string {
+			let htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'utf-8');
+
+			if (htmlFileName == "luaManual") {
+				htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'latin1');
+
+				var cssUriLuaManual = vscode.Uri.file(path.join(context.extensionPath, 'docs', `${htmlFileName}_files`, `manual.css`));
+				var cssWebviewUriLuaManual = panel.webview.asWebviewUri(cssUriLuaManual);
+				htmlContent = htmlContent.replace(`<link rel="stylesheet" type="text/css" href="./${htmlFileName}_files/manual.css">`, `<link rel="stylesheet" href="${cssWebviewUriLuaManual}">`);
+
+				cssUriLuaManual = vscode.Uri.file(path.join(context.extensionPath, 'docs', `${htmlFileName}_files`, `lua.css`));
+				cssWebviewUriLuaManual = panel.webview.asWebviewUri(cssUriLuaManual);
+				htmlContent = htmlContent.replace(`<link rel="stylesheet" type="text/css" href="./${htmlFileName}_files/lua.css">`, `<link rel="stylesheet" href="${cssWebviewUriLuaManual}">`);
+
+			} else {
+				const cssUri = vscode.Uri.file(path.join(context.extensionPath, 'docs', `${htmlFileName}_files`, `${cssFileName}.css`));
+				const cssWebviewUri = panel.webview.asWebviewUri(cssUri);
+
+				htmlContent = htmlContent.replace(`<link rel="stylesheet" href="./${htmlFileName}_files/${cssFileName}.css" type="text/css">`, `<link rel="stylesheet" href="${cssWebviewUri}" type="text/css">`);
+			}
+
+			return htmlContent;
+		}
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(openWebviewCommand);
 }
-
-function getWebviewContent(htmlFilePath: vscode.Uri): string {
-	// Read the contents of the HTML file
-	const htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'utf-8');
-	return htmlContent;
-}
-
-// function getWebviewContent(htmlFilePath: vscode.Uri, cssFolderPath: string, cssFileName: string): string {
-// 	// Read the contents of the HTML file
-// 	let htmlContent = fs.readFileSync(htmlFilePath.fsPath, 'utf-8');
-
-// 	// Replace the CSS link with the webview URI
-// 	const cssUri = vscode.Uri.file(path.join(context.extensionPath, 'downloads', cssFolderPath, cssFileName));
-// 	const cssWebviewUri = panel.webview.asWebviewUri(cssUri);
-// 	htmlContent = htmlContent.replace('<link rel="stylesheet" href="styles.css">', `<link rel="stylesheet" href="${cssWebviewUri}">`);
-
-// 	return htmlContent;
-// }
-
-
-export function deactivate() { }

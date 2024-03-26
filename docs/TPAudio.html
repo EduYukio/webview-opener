@@ -1,0 +1,1550 @@
+
+<!-- saved from url=(0111)https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="vsc-initialized">return [==[
+
+
+
+
+    <title>TPLib Documentation</title>
+    <link rel="stylesheet" href="./TPAudio_files/ldoc.css" type="text/css">
+
+
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br>
+<h1>TPLib</h1>
+
+<ul>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Functions">Functions</a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Tables">Tables</a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Loading">Loading </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Playing">Playing </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Channel">Channel </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Pause">Pause </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Volume">Volume </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Stop">Stop </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Group">Group </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Enable_Disable">Enable/Disable </a></li>
+<li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Mute">Mute </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPActionsManager.html">TPActionsManager</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAnalytics.html">TPAnalytics</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAnalyticsSession.html">TPAnalyticsSession</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAssetsLoader.html">TPAssetsLoader</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAtlas.html">TPAtlas</a></li>
+  <li><strong>TPAudio</strong></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAuth.html">TPAuth</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPBitmapText.html">TPBitmapText</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPDataAuth.html">TPDataAuth</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPDebugTools.DiskAccessDebugWindow.html">TPDebugTools.DiskAccessDebugWindow</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPDebugTools.TPDebugWindows.html">TPDebugTools.TPDebugWindows</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPDebugTools.TagsManagerDebugWindow.html">TPDebugTools.TagsManagerDebugWindow</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPDevices.html">TPDevices</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPErrorPopup.html">TPErrorPopup</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPExperienceManager.html">TPExperienceManager</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPFeedbackDialogue.html">TPFeedbackDialogue</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPFixtures.html">TPFixtures</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPFontSwitchManager.html">TPFontSwitchManager</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPFunctional.html">TPFunctional</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPGameNetwork.html">TPGameNetwork</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPI18n.html">TPI18n</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPInstallReferrer.html">TPInstallReferrer</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPInterAppCommunication.html">TPInterAppCommunication</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPInternetManager.html">TPInternetManager</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPInventory.html">TPInventory</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPLeaderboards.html">TPLeaderboards</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPLegacyPortFixes.html">TPLegacyPortFixes</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPLocalNotifications.html">TPLocalNotifications</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPMath.html">TPMath</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPMessages.html">TPMessages</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPNativeInfo.html">TPNativeInfo</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPNativePluginLoader.html">TPNativePluginLoader</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPNatives.TPFirebaseFirestore.html">TPNatives.TPFirebaseFirestore</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPNotification.html">TPNotification</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPNotificationAnalytics.html">TPNotificationAnalytics</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPPushNotifications.html">TPPushNotifications</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPRate.html">TPRate</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPSafeCall.html">TPSafeCall</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPShare.html">TPShare</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPString.html">TPString</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTable.html">TPTable</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTableToDisk.html">TPTableToDisk</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTagsManager.html">TPTagsManager</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTextUtils.html">TPTextUtils</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTimeHack.html">TPTimeHack</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTransition.html">TPTransition</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPTutorialEvents.html">TPTutorialEvents</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPURLSchemeHandler.html">TPURLSchemeHandler</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.ButtonBaseBasic.html">TPWidget.ButtonBaseBasic</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.ButtonBaseOld.html">TPWidget.ButtonBaseOld</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.ButtonBasic.html">TPWidget.ButtonBasic</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.ButtonOld.html">TPWidget.ButtonOld</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.Core.TPButton.html">TPWidget.Core.TPButton</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPWidget.ScrollPages.Models.LineMosaic.html">TPWidget.ScrollPages.Models.LineMosaic</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TimeMoment.html">TimeMoment</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TimeTravelerController.html">TimeTravelerController</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TimeUtils.html">TimeUtils</a></li>
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/WordFinder.html">WordFinder</a></li>
+</ul>
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/classes/TPAssetManager.html">TPAssetManager</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>TPAudio</code></h1>
+<p>Handles playing and loading sound effects and music.</p>
+<p>
+
+
+</p><p>Example usage:</p>
+
+
+<pre><span class="keyword">local</span> mySoundConfig = {
+    file = <span class="string">"assets/Sounds/my-game.mp3"</span>,
+}
+<span class="keyword">local</span> soundArrayConfig = {
+    { file = <span class="string">"assets/Sounds/shoot-a.mp3"</span>, },
+    { file = <span class="string">"assets/Sounds/shoot-b.mp3"</span>, },
+    { file = <span class="string">"assets/Sounds/shoot-c.mp3"</span>, },
+}
+
+<span class="comment">--DLC sound files must be in folder "Sounds/"
+</span><span class="comment">--this is used in function TPAudio.loadSound
+</span><span class="keyword">local</span> dlcSoundConfig = {
+    fromDLC = <span class="string">"dlc-name"</span>,
+    file = <span class="string">"my-game.ogg"</span>,
+}
+
+<span class="keyword">local</span> dlcSoundArrayConfig = {
+    {
+        fromDLC = <span class="string">"dlc-name"</span>,
+        file = <span class="string">"shoot-a.ogg"</span>,
+    },
+    {
+        fromDLC = <span class="string">"dlc-name"</span>,
+        file = <span class="string">"shoot-b.ogg"</span>,
+    },
+}
+
+<span class="keyword">local</span> gameSoundGroup = {
+    [mySoundConfig] = <span class="keyword">true</span>,
+    [ soundArrayConfig[<span class="number">1</span>] ] = <span class="keyword">true</span>,
+    [ soundArrayConfig[<span class="number">2</span>] ] = <span class="keyword">true</span>,
+    [ soundArrayConfig[<span class="number">3</span>] ] = <span class="keyword">true</span>,
+}
+
+<span class="keyword">local</span> TPAudio = <span class="global">require</span>(<span class="string">"tpcoronalibrary.TPAudio"</span>)
+
+<span class="comment">-- Preload sounds
+</span>TPAudio.loadSound(mySoundConfig)
+TPAudio.loadSoundGroup(gameSoundGroup)
+
+<span class="comment">-- Play a sound, sounds are loaded if not preloaded
+</span>TPAudio.playSound(mySoundConfig, volume, pitch, onComplete)
+TPAudio.playSound(soundArrayConfig)
+
+<span class="comment">-- Stoping sounds
+</span>TPAudio.stopSound(mySoundConfig)
+TPAudio.stopWithFadeOut(mySoundConfig, <span class="number">1000</span>)
+TPAudio.stopGroup(gameSoundGroup)
+TPAudio.stopAll()
+
+<span class="comment">-- Stop and Dispose sounds
+</span>TPAudio.stop(mySoundConfig, <span class="keyword">true</span>)
+TPAudio.stopWithFadeOut(mySoundConfig, <span class="number">1000</span>, <span class="keyword">true</span>)
+TPAudio.stopAll(<span class="keyword">true</span>)
+
+<span class="comment">-- Enable/Disable Audio
+</span>TPAudio.setEnableBgm(<span class="keyword">true</span>)
+TPAudio.setEnableSfx(<span class="keyword">false</span>)
+</pre>
+
+<p></p>
+
+
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Functions">Functions</a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#setAudioEventLog">setAudioEventLog (enabled)</a></td>
+	<td class="summary">Controls if TPAudio sends Analytics events.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Tables">Tables</a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></td>
+	<td class="summary">Definition of a sound.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundArray">SoundArray</a></td>
+	<td class="summary">Array of sounds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></td>
+	<td class="summary">Set of sounds.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Loading">Loading </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#soundIsLoaded">soundIsLoaded (soundInfo)</a></td>
+	<td class="summary">Checks if a sound is loaded.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#loadSound">loadSound (soundInfo)</a></td>
+	<td class="summary">Loads the given sound.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#loadSoundGroup">loadSoundGroup (soundGroup)</a></td>
+	<td class="summary">Loads every sound in a group.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Playing">Playing </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#playSound">playSound (soundInfo[, volume[, pitch[, onComplete]]])</a></td>
+	<td class="summary">Plays a sound.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#rewindSound">rewindSound (soundInfo)</a></td>
+	<td class="summary">Rewinds the given sound.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#isSoundPlaying">isSoundPlaying (soundInfo)</a></td>
+	<td class="summary">Check if the sound is being played on a channel now.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#countSoundInstances">countSoundInstances (soundInfo)</a></td>
+	<td class="summary">Counts paused or playing instances of a sound.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Channel">Channel </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#channelsForSound">channelsForSound (soundInfo)</a></td>
+	<td class="summary">Query which channels are playing a soundInfo.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopChannels">stopChannels (channels)</a></td>
+	<td class="summary">Stops multiple audio channels.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseChannels">pauseChannels (channels)</a></td>
+	<td class="summary">Pauses multiple audio channels.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseAllChannels">pauseAllChannels ()</a></td>
+	<td class="summary">Pauses all current channels.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#getChannelsPlaying">getChannelsPlaying ()</a></td>
+	<td class="summary">Queries which channels are playing.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeChannels">resumeChannels (channels)</a></td>
+	<td class="summary">Resumes multiple audio channels.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeAllChannels">resumeAllChannels ()</a></td>
+	<td class="summary">Resumes all current channels.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Pause">Pause </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseSound">pauseSound (soundInfo)</a></td>
+	<td class="summary">Pauses all channels playing a sound.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeSound">resumeSound (soundInfo)</a></td>
+	<td class="summary">Resumes all channels playing a sound.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Volume">Volume </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#setSoundVolume">setSoundVolume (soundInfo, volume)</a></td>
+	<td class="summary">Changes the volume of currently playing instances of the given sound.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Stop">Stop </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopWithFadeOut">stopWithFadeOut (soundInfo, time, shouldDispose)</a></td>
+	<td class="summary">Fades out all channels playing the given sound..</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSound">stopSound (soundInfo, shouldDispose)</a></td>
+	<td class="summary">Stops all channels playing the given sound.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Group">Group </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeGroup">resumeGroup (soundGroup)</a></td>
+	<td class="summary">Resumes all sounds in a group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseGroup">pauseGroup (soundGroup)</a></td>
+	<td class="summary">Pauses all sounds in a group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopGroup">stopGroup (soundGroup[, shouldDispose])</a></td>
+	<td class="summary">Stops all sounds in a group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopBgm">stopBgm ([shouldDispose])</a></td>
+	<td class="summary">Stops all sounds with <code>isBackground</code>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSfx">stopSfx ([shouldDispose])</a></td>
+	<td class="summary">Stops all sounds without <code>isBackground</code>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopAll">stopAll ([shouldDispose])</a></td>
+	<td class="summary">Stops all sounds.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Enable_Disable">Enable/Disable </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#initEnableBgm">initEnableBgm ()</a></td>
+	<td class="summary">Initializes the BGM enabled flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#initAudioShouldBeSilenced">initAudioShouldBeSilenced ()</a></td>
+	<td class="summary">Checks for secondary audio (e.g.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#getEnableBgm">getEnableBgm ()</a></td>
+	<td class="summary">Checks if BGMs are enabled.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#setEnableBgm">setEnableBgm (enabled[, force])</a></td>
+	<td class="summary">Enable or disable BGMs.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#initEnableSfx">initEnableSfx ()</a></td>
+	<td class="summary">Initializes the SFX enabled flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#getEnableSfx">getEnableSfx ()</a></td>
+	<td class="summary">Checks if SFXs are enabled.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#setEnableSfx">setEnableSfx (enabled[, force])</a></td>
+	<td class="summary">Enable or disable SFX.</td>
+	</tr>
+</tbody></table>
+<h2><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#Mute">Mute </a></h2>
+<table class="function_list">
+	<tbody><tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#muteGroup">muteGroup (soundGroup[, keepPlaying])</a></td>
+	<td class="summary">Mutes a group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#unmuteGroup">unmuteGroup (soundGroup)</a></td>
+	<td class="summary">Unmutes a group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#isGroupMuted">isGroupMuted (soundGroup)</a></td>
+	<td class="summary">Checks if a group is muted.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#getMediaVolume">getMediaVolume ()</a></td>
+	<td class="summary">Returns the device media volume.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#getEarphonesConnected">getEarphonesConnected ()</a></td>
+	<td class="summary">Returns if an earphone is connected.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap=""><a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#hasBackgroundMusic">hasBackgroundMusic ()</a></td>
+	<td class="summary">Returns if the device is playing music outside of this app.</td>
+	</tr>
+</tbody></table>
+
+<br>
+<br>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name="setAudioEventLog"></a>
+    <strong>setAudioEventLog (enabled)</strong>
+    </dt>
+    <dd>
+    Controls if TPAudio sends Analytics events.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enabled</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name="SoundConfig"></a>
+    <strong>SoundConfig</strong>
+    </dt>
+    <dd>
+    Definition of a sound.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">channel</span>
+            <span class="types"><span class="type">int</span> or <a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Number of the specified channel, or array of possible channels.
+        </li>
+        <li><span class="parameter">file</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Filename of the sound, with extension.
+        </li>
+        <li><span class="parameter">isBackground</span>
+            <span class="types"><span class="type">bool</span></span>
+         Load sound using audio.loadStream if true.
+        </li>
+        <li><span class="parameter">loops</span>
+            <span class="types"><span class="type">int</span></span>
+         Number of times to loop | -1 (Loops indefinetly), -1 | 0 | 1 | ... | N
+        </li>
+        <li><span class="parameter">duration</span>
+            <span class="types"><span class="type">int</span></span>
+         Plays the sound for the specified miliseconds, then stops, regardless if finished or not.
+        </li>
+        <li><span class="parameter">fadein</span>
+            <span class="types"><span class="type">int</span></span>
+         Time in miliseconds to fade in.
+        </li>
+        <li><span class="parameter">fadeout</span>
+            <span class="types"><span class="type">int</span></span>
+         Time in miliseconds to fade out.
+        </li>
+        <li><span class="parameter">minimumInterval</span>
+            <span class="types"><span class="type">int</span></span>
+         Minimum time in miliseconds before playing this sound again. Optional.
+        </li>
+        <li><span class="parameter">dontStopSoundWhenDisablingSfx</span>
+            <span class="types"><span class="type">bool</span></span>
+         If set, this sound isn't stopped by <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSfx">stopSfx</a>.
+        </li>
+        <li><span class="parameter">mediaAPIType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+<p> Optional flag to reduce audio lag on Android devices. Possible values:</p>
+
+<ol>
+    <li><p>"sfx" files will be played with media.playSoundEffects. Cannot be stopped.</p></li>
+    <li><p>"sound" files will be played with media.playSound. Can be stopped, paused, resumed but only one sound can be played at time.</p></li>
+</ol>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="SoundArray"></a>
+    <strong>SoundArray</strong>
+    </dt>
+    <dd>
+    Array of sounds.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">1</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The first sound in the array.
+        </li>
+        <li><span class="parameter">minimumInterval</span>
+            <span class="types"><span class="type">int</span></span>
+         Minimum time in miliseconds before playing this sound again. Optional.
+        </li>
+        <li><span class="parameter">mode</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+<p> The pattern of usage of the array. Possible values:</p>
+
+<ol>
+    <li>randomWithoutRepetition (default)</li>
+    <li>sequentialLoop</li>
+</ol>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="SoundGroup"></a>
+    <strong>SoundGroup</strong>
+    </dt>
+    <dd>
+
+<p>Set of sounds. </p>
+<pre><code>local soundGroup = {
+    [soundConfigA] = true,
+}
+</code></pre>
+
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Loading"></a>Loading </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="soundIsLoaded"></a>
+    <strong>soundIsLoaded (soundInfo)</strong>
+    </dt>
+    <dd>
+    Checks if a sound is loaded.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to check.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        Whether the sound is loaded.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="loadSound"></a>
+    <strong>loadSound (soundInfo)</strong>
+    </dt>
+    <dd>
+    Loads the given sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to load.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        The loaded sound handle.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="loadSoundGroup"></a>
+    <strong>loadSoundGroup (soundGroup)</strong>
+    </dt>
+    <dd>
+    Loads every sound in a group.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The group to load.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Playing"></a>Playing </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="playSound"></a>
+    <strong>playSound (soundInfo[, volume[, pitch[, onComplete]]])</strong>
+    </dt>
+    <dd>
+    Plays a sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a> or <a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundArray">SoundArray</a></span>
+         The sound to play. If it's an array, a config
+ will be selected based on it's mode.
+        </li>
+        <li><span class="parameter">volume</span>
+            <span class="types"><span class="type">number</span></span>
+         <code>0.0 &lt;= volume &lt;= 1.0</code>, with 1.0 being maximum
+ volume. Defaults to 1.
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">pitch</span>
+            <span class="types"><span class="type">number</span></span>
+         1 is normal. Double/half to increase/decrease
+ by 12 semitones (one octave). Defaults to 1.
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">onComplete</span>
+            <span class="types"><span class="type">function</span></span>
+         Function to call when the audio finishes playing.
+ Not reliable, and not called if sounds are disabled.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        The channel in which the sound was played.</li>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        The AL source in which the sound was played.</li>
+    </ol>
+     <h3>Or</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+        If no sound were played.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="rewindSound"></a>
+    <strong>rewindSound (soundInfo)</strong>
+    </dt>
+    <dd>
+    Rewinds the given sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound info to rewind.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="isSoundPlaying"></a>
+    <strong>isSoundPlaying (soundInfo)</strong>
+    </dt>
+    <dd>
+    Check if the sound is being played on a channel now.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to be checked.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        Whether the sound is being played on a channel now.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="countSoundInstances"></a>
+    <strong>countSoundInstances (soundInfo)</strong>
+    </dt>
+    <dd>
+    Counts paused or playing instances of a sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to be checked.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        Number of active sound instances.
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Channel"></a>Channel </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="channelsForSound"></a>
+    <strong>channelsForSound (soundInfo)</strong>
+    </dt>
+    <dd>
+    Query which channels are playing a soundInfo.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The soundInfo to query for.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        An array of channel numbers.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="stopChannels"></a>
+    <strong>stopChannels (channels)</strong>
+    </dt>
+    <dd>
+    Stops multiple audio channels.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">channels</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         A list of channels.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        The number of stopped channels.</li>
+        <li>
+        true</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="pauseChannels"></a>
+    <strong>pauseChannels (channels)</strong>
+    </dt>
+    <dd>
+    Pauses multiple audio channels.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">channels</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         A list of channels.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        The number of paused channels.</li>
+        <li>
+        true</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="pauseAllChannels"></a>
+    <strong>pauseAllChannels ()</strong>
+    </dt>
+    <dd>
+    Pauses all current channels.
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseChannels">pauseChannels</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="getChannelsPlaying"></a>
+    <strong>getChannelsPlaying ()</strong>
+    </dt>
+    <dd>
+    Queries which channels are playing.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        An array of channels.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="resumeChannels"></a>
+    <strong>resumeChannels (channels)</strong>
+    </dt>
+    <dd>
+    Resumes multiple audio channels.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">channels</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         A list of channels.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        The number of resumed channels.</li>
+        <li>
+        true</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="resumeAllChannels"></a>
+    <strong>resumeAllChannels ()</strong>
+    </dt>
+    <dd>
+    Resumes all current channels.
+
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeChannels">resumeChannels</a>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Pause"></a>Pause </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="pauseSound"></a>
+    <strong>pauseSound (soundInfo)</strong>
+    </dt>
+    <dd>
+    Pauses all channels playing a sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to pause.
+ Passing a <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundArray">SoundArray</a> will cause no channels to be paused.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="resumeSound"></a>
+    <strong>resumeSound (soundInfo)</strong>
+    </dt>
+    <dd>
+    Resumes all channels playing a sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to resume.
+ Passing a <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundArray">SoundArray</a> will cause no channels to be resumed.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Volume"></a>Volume </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="setSoundVolume"></a>
+    <strong>setSoundVolume (soundInfo, volume)</strong>
+    </dt>
+    <dd>
+    Changes the volume of currently playing instances of the given sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to change the volume.
+        </li>
+        <li><span class="parameter">volume</span>
+            <span class="types"><span class="type">number</span></span>
+         A number in the range [0.0, 1.0], with 1.0 being maximum volume.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Stop"></a>Stop </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="stopWithFadeOut"></a>
+    <strong>stopWithFadeOut (soundInfo, time, shouldDispose)</strong>
+    </dt>
+    <dd>
+    Fades out all channels playing the given sound..
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a></span>
+         The sound to fade out.
+        </li>
+        <li><span class="parameter">time</span>
+            <span class="types"><span class="type">number</span></span>
+         Time in miliseconds to fade the fade the sound over.
+        </li>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         If we should unload the sound after it stops.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="stopSound"></a>
+    <strong>stopSound (soundInfo, shouldDispose)</strong>
+    </dt>
+    <dd>
+    Stops all channels playing the given sound.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundInfo</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundConfig">SoundConfig</a> or <a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundArray">SoundArray</a></span>
+         The sound to stop.
+ If an array, stops the last played sound.
+        </li>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         If we should unload the sound after it stops.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopChannels">stopChannels</a>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Group"></a>Group </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="resumeGroup"></a>
+    <strong>resumeGroup (soundGroup)</strong>
+    </dt>
+    <dd>
+    Resumes all sounds in a group.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The group to resume.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#resumeGroup">resumeGroup</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="pauseGroup"></a>
+    <strong>pauseGroup (soundGroup)</strong>
+    </dt>
+    <dd>
+    Pauses all sounds in a group.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The group to pause.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#pauseSound">pauseSound</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="stopGroup"></a>
+    <strong>stopGroup (soundGroup[, shouldDispose])</strong>
+    </dt>
+    <dd>
+    Stops all sounds in a group.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The group to stop.
+        </li>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The shouldDispose argument of stopSound.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSound">stopSound</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="stopBgm"></a>
+    <strong>stopBgm ([shouldDispose])</strong>
+    </dt>
+    <dd>
+    Stops all sounds with <code>isBackground</code>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The shouldDispose argument of stopSound.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSound">stopSound</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="stopSfx"></a>
+    <strong>stopSfx ([shouldDispose])</strong>
+    </dt>
+    <dd>
+    Stops all sounds without <code>isBackground</code>.  Also skips sounds with <code>dontStopSoundWhenDisablingSfx</code>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The shouldDispose argument of stopSound.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSound">stopSound</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="stopAll"></a>
+    <strong>stopAll ([shouldDispose])</strong>
+    </dt>
+    <dd>
+    Stops all sounds.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shouldDispose</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The shouldDispose argument of stopSound.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#stopSound">stopSound</a>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Enable_Disable"></a>Enable/Disable </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="initEnableBgm"></a>
+    <strong>initEnableBgm ()</strong>
+    </dt>
+    <dd>
+    Initializes the BGM enabled flag.  This is called automatically when the module is loaded.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="initAudioShouldBeSilenced"></a>
+    <strong>initAudioShouldBeSilenced ()</strong>
+    </dt>
+    <dd>
+    Checks for secondary audio (e.g.  music player) (iOS).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Whether secondary music is playing and BGM should not play.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="getEnableBgm"></a>
+    <strong>getEnableBgm ()</strong>
+    </dt>
+    <dd>
+    Checks if BGMs are enabled.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Whether bgms are playing or not.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="setEnableBgm"></a>
+    <strong>setEnableBgm (enabled[, force])</strong>
+    </dt>
+    <dd>
+    Enable or disable BGMs.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The new BGM status.
+        </li>
+        <li><span class="parameter">force</span>
+            <span class="types"><span class="type">boolean</span></span>
+         By default, this function does nothing if the status is the same.
+ This option disables that check.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="initEnableSfx"></a>
+    <strong>initEnableSfx ()</strong>
+    </dt>
+    <dd>
+    Initializes the SFX enabled flag.  This is called automatically when the module is loaded.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="getEnableSfx"></a>
+    <strong>getEnableSfx ()</strong>
+    </dt>
+    <dd>
+    Checks if SFXs are enabled.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Wether SFXs are playing or not.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="setEnableSfx"></a>
+    <strong>setEnableSfx (enabled[, force])</strong>
+    </dt>
+    <dd>
+    Enable or disable SFX.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+         The new SFX status.
+        </li>
+        <li><span class="parameter">force</span>
+            <span class="types"><span class="type">boolean</span></span>
+         By default, this function does nothing if the status is the same.
+ This option disables that check.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Mute"></a>Mute </h2>
+
+    <dl class="function">
+    <dt>
+    <a name="muteGroup"></a>
+    <strong>muteGroup (soundGroup[, keepPlaying])</strong>
+    </dt>
+    <dd>
+    Mutes a group.  Sounds that belongs at least one muted group can't be played.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The sound group to mute.
+        </li>
+        <li><span class="parameter">keepPlaying</span>
+            <span class="types"><span class="type">boolean</span></span>
+         If currently playing sounds should be left alone.
+ Defaults to stop them.
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name="unmuteGroup"></a>
+    <strong>unmuteGroup (soundGroup)</strong>
+    </dt>
+    <dd>
+    Unmutes a group.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The sound group to unmute.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#muteGroup">muteGroup</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="isGroupMuted"></a>
+    <strong>isGroupMuted (soundGroup)</strong>
+    </dt>
+    <dd>
+    Checks if a group is muted.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">soundGroup</span>
+            <span class="types"><a class="type" href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#SoundGroup">SoundGroup</a></span>
+         The sound group to check.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="https://s3.amazonaws.com/tapps-gocd/Public/TPLib-Docs/tappshq/tpcoronalibrary5/tplove-next/modules/TPAudio.html#muteGroup">muteGroup</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name="getMediaVolume"></a>
+    <strong>getMediaVolume ()</strong>
+    </dt>
+    <dd>
+    Returns the device media volume.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        A number in the range [0, 1].
+    </ol>
+     <h3>Or</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+        Nil, if the volume is unavailable.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="getEarphonesConnected"></a>
+    <strong>getEarphonesConnected ()</strong>
+    </dt>
+    <dd>
+    Returns if an earphone is connected.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True, if connected, false otherwise.
+    </ol>
+     <h3>Or</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+        Nil, if we cannot determine this information
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name="hasBackgroundMusic"></a>
+    <strong>hasBackgroundMusic ()</strong>
+    </dt>
+    <dd>
+    Returns if the device is playing music outside of this app.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2022-03-18 22:18:25 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+
+
+]==]
+
+</body></html>
